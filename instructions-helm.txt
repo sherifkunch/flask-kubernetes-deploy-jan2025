@@ -1,0 +1,10 @@
+1. Check if the chart is valid:
+helm lint .
+
+2. Dry run
+Render the templates with default values (from values.yaml) to ensure everything works:
+helm template my-release .
+
+3. Install the chart
+Deploy the Helm chart to a Kubernetes cluster:
+helm install my-release .

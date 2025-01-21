@@ -1,0 +1,12 @@
+deployment:
+        name: kubernetes-demo-hello-app-helm
+        image: 392209090241.dkr.ecr.eu-central-1.amazonaws.com/flask-app:6059a5a
+        tag: latest
+        replicas: 1
+        containerPort: 8080
+service:
+        name: flaskapp-lb-svc
+        port: 8080
+        targetPort: 8080
+        type: LoadBalancer
+        
