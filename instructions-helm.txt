@@ -8,3 +8,13 @@ helm template my-release .
 3. Install the chart
 Deploy the Helm chart to a Kubernetes cluster:
 helm install my-release .
+
+4.Upgrade the Chart
+If you make changes to the chart and want to redeploy:
+helm upgrade my-release .
+
+5. uninstall
+helm uninstall my-release
+
+6. list
+ helm list --all-namespaces
